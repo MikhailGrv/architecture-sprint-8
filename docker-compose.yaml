@@ -40,6 +40,8 @@ services:
       REACT_APP_KEYCLOAK_URL: http://localhost:8080
       REACT_APP_KEYCLOAK_REALM: reports-realm
       REACT_APP_KEYCLOAK_CLIENT_ID: reports-frontend
+    networks:
+      - some-net
   # backend:
   #   build:
   #     context: ./backend2
@@ -53,4 +55,10 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8090:8090"
+    networks:
+      - some-net
 
+
+networks:
+  some-net:
+    driver: bridge
