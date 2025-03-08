@@ -50,6 +50,7 @@ services:
   #     - "8090:8090"
 
   backend:
+    container_name: custom-conainer-name
     build:
       context: ./backend2
       dockerfile: Dockerfile
