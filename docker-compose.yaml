@@ -36,7 +36,30 @@ services:
     ports:
       - "3000:3000"
     environment:
-      REACT_APP_API_URL: http://localhost:8000
+      REACT_APP_API_URL: http://localhost:8090
       REACT_APP_KEYCLOAK_URL: http://localhost:8080
       REACT_APP_KEYCLOAK_REALM: reports-realm
       REACT_APP_KEYCLOAK_CLIENT_ID: reports-frontend
+    networks:
+      - some-net
+  # backend:
+  #   build:
+  #     context: ./backend2
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "8090:8090"
+
+  backend:
+    container_name: custom-conainer-name
+    build:
+      context: ./backend2
+      dockerfile: Dockerfile
+    ports:
+      - "8090:8090"
+    networks:
+      - some-net
+
+
+networks:
+  some-net:
+    driver: bridge

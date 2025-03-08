@@ -1,0 +1,8 @@
+{
+  "realm" : "reports-realm",
+  "realm-public-key" : "1lfmExUInr8N7EwE2pFy0SXUtxQXVl5igP_0RedJBugOSlJt30lhfO9uu9Ey7XMkRTsdVFyHzyK3t02vzxkkFF_JPkj27QfP2bgdzUYbKn5EiF_fbIjZRHO7ohYLiywvbIKnnAUNKeGTvZKYlzEv0DEkUHeb_GDilsWEbiQanCGbH8YnG8uJyL2teQOjVeT3kNfR0jXZkDFHEIMdjjzUGmKGDBYrfPqKXsHSkxN4O_59EbFIUpTHfJo9gx0L3lNQ7aXPVMHpPJFNpWx488o8j3DqOK5Jz-o6793wHJvBwfBwBSXLbPtmQWI-PdbbbwcyaAbFMroBfpvjKGptfKzRBw",
+  "auth-server-url" : "http://localhost:8080",
+  "ssl-required" : false,
+  "resource" : "reports-api",
+  "public-client" : true
+}

@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "express": "*",
+    "express-session": "*",
+    "hogan-express": "*",
+    "jsonwebtoken": "^9.0.2",
+    "keycloak-connect": "^26.1.1",
+    "openssl": "^2.0.0"
+  },
+  "name": "backend2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
